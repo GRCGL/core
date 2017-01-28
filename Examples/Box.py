@@ -1,8 +1,7 @@
-from Library import GRCGraphics as GRC
-from Library import nrnoble as Util
-
-
 import random
+
+from Examples import nrnoble as Util
+from Library import GRCGraphics as GRC
 
 Colors =['Red', 'Green', 'Blue', 'White', 'Black', 'Yellow', 'Orange', 'Pink', 'Purple', 'Gold', 'Silver', 'Gray', 'Maroon']
 

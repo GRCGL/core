@@ -1,8 +1,8 @@
+import random
+import time
+
+from Examples import nrnoble as Util
 from Library import GRCGraphics as GRC
-from Library import nrnoble as Util
-
-
-import random, time, sys
 
 windowWidth = 300
 windowHeight = 300

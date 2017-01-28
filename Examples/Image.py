@@ -1,8 +1,7 @@
-from Library import GRCGraphics as GRC
-from Library import nrnoble as Util
-
-
 import random
+
+from Examples import nrnoble as Util
+from Library import GRCGraphics as GRC
 
 windowWidth = 502
 windowHeight = 268

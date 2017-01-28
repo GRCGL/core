@@ -1,11 +1,8 @@
-from Library import GRCGraphics as GRC
-from Library import nrnoble as Util
-import json
 import pickle
-
-#https://docs.python.org/2/tutorial/inputoutput.html
-
 import random
+
+from Examples import nrnoble as Util
+from Library import GRCGraphics as GRC
 
 windowWidth = 502
 windowHeight = 268

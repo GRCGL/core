@@ -1,8 +1,7 @@
-from tkinter import *
-from Library import GRCGraphics as GRC
-from Library import nrnoble as Util
-
 from ctypes import windll
+from tkinter import *
+
+from Library import GRCGraphics as GRC
 
 background2 = GRC.Image(GRC.Point(251, 134), "..\\Content\\randomPixelsbackground3.png")
 

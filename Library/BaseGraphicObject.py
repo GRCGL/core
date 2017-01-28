@@ -1,6 +1,3 @@
-
-
-
 from Library.BaseGraphicsError import *
 from Library.BaseGlobals import *
 
