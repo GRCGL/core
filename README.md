@@ -17,19 +17,19 @@ Sample code that draws a box.
           windowHeight = 300
 
 
-          # Define the graphics window.
+          # Define the graphics window object
           gWindow = GRC.GraphicsWindow("Title of window: Box", windowWidth, windowHeight)
 
-          # set boarder Color of box
+          # set boarder Color of box object
           Color = "Black"
 
-          #define a polygon as a box
+          #define a polygon object as a box
           polygon = GRC.Polygon(GRC.Point(10, 10), GRC.Point(125, 10), GRC.Point(125,125), GRC.Point(10,125))
 
-          #display box object on graphics windows
+          #Grahpic window to box object
           polygon.draw(gWindow)
 
-          #click to close window
+          #click on window to close\exit
           gWindow.waitForClick()
 
 
