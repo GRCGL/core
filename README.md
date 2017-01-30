@@ -12,7 +12,7 @@ Sample code that draws a box.
 
       def main():
 
-          # define size of graphics windows
+          # define size of graphics window
           windowWidth = 300
           windowHeight = 300
 
