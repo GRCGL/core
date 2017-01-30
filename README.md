@@ -29,7 +29,7 @@ Sample code that draws a box.
           # Pass graphic window object to the box object; call draw method.
           polygon.draw(gWindow)
 
-          #click on window to close\exit
+          # click on window to close\exit
           gWindow.waitForClick()
 
 
