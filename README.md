@@ -3,7 +3,7 @@ See Docs directory for python APIs
 
 Install:
   Download project from GitHub
-  Place "Library" folder into your pything project folder
+  Place"Library" folder into your Python project folder. 
   
 Sample code that draws a box.
 
