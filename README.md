@@ -23,10 +23,10 @@ Sample code that draws a box.
           # set boarder Color of box object
           Color = "Black"
 
-          #define a polygon object as a box
+          # define a polygon object as a box
           polygon = GRC.Polygon(GRC.Point(10, 10), GRC.Point(125, 10), GRC.Point(125,125), GRC.Point(10,125))
 
-          #Grahpic window to box object
+          # Pass graphic window object to the box object; call draw method.
           polygon.draw(gWindow)
 
           #click on window to close\exit
