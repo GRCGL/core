@@ -1,6 +1,7 @@
 from ctypes import windll
 from tkinter import *
-
+import random, os, sys, inspect, pickle
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Library import GRCGraphics as GRC
 
 background2 = GRC.Image(GRC.Point(251, 134), "..\\Content\\randomPixelsbackground3.png")

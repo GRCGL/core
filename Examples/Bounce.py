@@ -1,6 +1,6 @@
+import random, os, sys, inspect
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Library import GRCGraphics as GRC
-
-import random
 
 Colors =['Red', 'Green', 'Blue', 'White', 'Black', 'Yellow', 'Orange', 'Pink', 'Purple', 'Gold', 'Silver', 'Gray', 'Maroon']
 
@@ -29,9 +29,11 @@ def wallBounce():
     Ball.setFill(Color)
     Ball.setOutline(Color)
     gWindow.addItem(Ball)
-    #gWindow.redraw()
+    gWindow.redraw()
     gWindow.update()
-    pause(gWindow)
+    GRC.time.sleep(1)
+   #pause(gWindow)
+
 
     doBounce(gWindow, Ball, windowHeight, margin, windowWidth, size, Color)
 

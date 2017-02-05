@@ -1,3 +1,5 @@
+import random, os, sys, inspect
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Library import GRCGraphics as GRC
 
 interval = .5

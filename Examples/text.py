@@ -1,10 +1,10 @@
-import random
-
+import random, os, sys, inspect, pickle
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Examples import nrnoble as Util
 from Library import GRCGraphics as GRC
 
 windowWidth = 300
-windowHeight = 300
+windowHeight = 25
 interval = 1
 Color = random.choice(Util.Colors)
 gWindow = GRC.GraphicsWindow("Text Demo", windowWidth, windowHeight)
@@ -16,7 +16,7 @@ def main():
 
 def TextScroll():
 
-    scrollText = GRC.Text(GRC.Point(500, 290), "Scroll Demo.... ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    scrollText = GRC.Text(GRC.Point(500, 15), "Scroll Demo.... ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     scrollText.setTextColor("Blue")
     scrollText.setFontSize(12)
     gWindow.addItem(scrollText)

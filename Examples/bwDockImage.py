@@ -1,5 +1,5 @@
-import pickle
-import random
+import random, os, sys, inspect, random, pickle
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 
 from Examples import nrnoble as Util
 from Library import GRCGraphics as GRC
@@ -13,7 +13,7 @@ gWindow1 = GRC.GraphicsWindow("Image Window-1", windowWidth, windowHeight)
 
 # background1 = GRC.Image(GRC.Point(251, 134), "E:\\Data\\Github\\GRC1\\Content\\bwdock.png")
 # background2 = GRC.Image(GRC.Point(251, 134), ".\\Content\\blackbackground.png")
-background2 = GRC.Image(GRC.Point(251, 134), ".\\Content\\randomPixelsbackground3.png")
+background2 = GRC.Image(GRC.Point(251, 134), "..\\Content\\randomPixelsbackground3.png")
 
 def main():
 

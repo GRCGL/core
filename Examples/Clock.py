@@ -1,6 +1,5 @@
-import random
-import time
-
+import random, time, sys, os, inspect
+sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Examples import nrnoble as Util
 from Library import GRCGraphics as GRC
 
