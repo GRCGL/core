@@ -48,7 +48,7 @@ def main():
     # careful to use binary mode when reading and writing such files. On Unix, it doesn’t hurt to append a 'b' to the
     # mode, so you can use it platform-independently for all binary files.
 
-    file = open('.\\Content\\bwDockImage.json', 'rb+')
+    file = open('..\\Content\\bwDockImage.json', 'rb+')
     #json.dump(pixels, file)
     #pickle.dump(pixels, file)
     pixels2 = pickle.load(file)

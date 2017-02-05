@@ -10,7 +10,7 @@ Color = random.choice(Util.Colors)
 gWindow1 = GRC.GraphicsWindow("Image Window-1", windowWidth, windowHeight)
 gWindow2 = GRC.GraphicsWindow("Image Window-2", windowWidth, windowHeight)
 
-background1 = GRC.Image(GRC.Point(251, 134), "..\Content\\bwdock.png")
+background1 = GRC.Image(GRC.Point(251, 134), "..\\Content\\bwdock.png")
 background2 = GRC.Image(GRC.Point(251, 134), "..\\Content\\blackbackground.png")
 
 def main():
