@@ -26,7 +26,7 @@ def main():
     win.addItem(c3)
     win.addItem(c4)
     win.redraw()
-    pause(win)
+    #pause(win)
 
     # win.redraw()
     # win.getMouse()

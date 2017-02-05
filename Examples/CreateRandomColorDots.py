@@ -1,7 +1,7 @@
 import random, os, sys, inspect
 sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 
-from Examples import nrnoble as Util
+import nrnoble as Util
 from Library import GRCGraphics as GRC
 
 windowWidth = 502

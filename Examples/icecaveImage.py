@@ -1,7 +1,7 @@
 import random, os, sys, inspect, pickle
 sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 
-from Examples import nrnoble as Util
+import nrnoble as Util
 from Library import GRCGraphics as GRC
 
 windowWidth = 502
@@ -9,15 +9,21 @@ windowHeight = 268
 interval = .1
 Color = random.choice(Util.Colors)
 gWindow1 = GRC.GraphicsWindow("Image Window-1", windowWidth, windowHeight)
-background2 = GRC.Image(GRC.Point(251, 134), ".\\Content\\whitebackground.png")
+background2 = GRC.Image(GRC.Point(251, 134), "..\\Content\\whitebackground.png")
 
 def main():
 
     background2.draw(gWindow1)
 
-    file = open('.\\Content\\icecave.pkle', 'rb+')
+
+
+    file = open('..\\Content\\icecave.pkle', 'rb+')
     pixels2 = pickle.load(file)
     file.close()
+
+    #file = open('..\\Content\\icecave.pkle', 'rb+')
+    #pixels2 = pickle.load(file)
+    #file.close()
 
     random.shuffle(pixels2)
 

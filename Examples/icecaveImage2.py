@@ -1,6 +1,6 @@
 import random, os, sys, inspect, pickle
 sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
-from Examples import nrnoble as Util
+import nrnoble as Util
 from Library import GRCGraphics as GRC
 
 windowWidth = 502
@@ -49,8 +49,6 @@ def main():
     # mode, so you can use it platform-independently for all binary files.
 
     file = open('..\\Content\\icecave.pkle', 'rb+')
-    #json.dump(pixels, file)
-    #pickle.dump(pixels, file)
     pixels2 = pickle.load(file)
 
     #pixels2 = json.dump(file)
