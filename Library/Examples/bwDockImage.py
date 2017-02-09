@@ -1,7 +1,12 @@
-import random, os, sys, inspect, random, pickle
+import inspect
+import os
+import pickle
+import random
+import sys
+
 sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 
-from Examples import nrnoble as Util
+from Library.Examples import nrnoble as Util
 from Library import GRCGraphics as GRC
 
 windowWidth = 502
@@ -39,7 +44,6 @@ def main():
     # characters describing the way in which the file will be used. mode can be 'r' when the file will only be read, 'w'
     # for only writing (an existing file with the same name will be erased), and 'a' opens the file for appending; any
     # data written to the file is automatically added to the end. 'r+' opens the file for both reading and writing. The
-    # mode argument is optional; 'r' will be assumed if it’s omitted.
 
     # On Windows, 'b' appended to the mode opens the file in binary mode, so there are also modes like 'rb', 'wb', and
     # 'r+b'. Python on Windows makes a distinction between text and binary files; the end-of-line characters in text

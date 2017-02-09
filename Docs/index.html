@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to GRCGL’s documentation! &#8212; GRCGL Alpha documentation</title>
+    <title>Green River College Python Graphic documentation ! &#8212; GRCGL Alpha documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -41,57 +41,10 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="welcome-to-grcgl-s-documentation">
-<h1>Welcome to GRCGL&#8217;s documentation!<a class="headerlink" href="#welcome-to-grcgl-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="green-river-college-python-graphic-documentation">
+<h1>Green River College Python Graphic documentation !<a class="headerlink" href="#green-river-college-python-graphic-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="mastertoc">
 </div>
-<span class="target" id="module-BaseGraphicObject"></span><dl class="class">
-<dt id="BaseGraphicObject.GraphicsObject">
-<em class="property">class </em><code class="descclassname">BaseGraphicObject.</code><code class="descname">GraphicsObject</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generic base class for all of the drawable objects</p>
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.draw">
-<code class="descname">draw</code><span class="sig-paren">(</span><em>graphwin</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.draw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Draw the object in graphwin, which should be a GraphWin
-object.  A GraphicsObject may only be drawn into one
-window. Raises an error if attempt made to draw an object that
-is already visible.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.move">
-<code class="descname">move</code><span class="sig-paren">(</span><em>dx</em>, <em>dy</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.move" title="Permalink to this definition">¶</a></dt>
-<dd><p>move object dx units in x direction and dy units in y
-direction</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.setFill">
-<code class="descname">setFill</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setFill" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set interior color to color</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.setOutline">
-<code class="descname">setOutline</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setOutline" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set outline color to color</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.setWidth">
-<code class="descname">setWidth</code><span class="sig-paren">(</span><em>width</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setWidth" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set line weight to width</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="BaseGraphicObject.GraphicsObject.undraw">
-<code class="descname">undraw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.undraw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Undraw the object (i.e. hide it). Returns silently if the
-object is not currently drawn.</p>
-</dd></dl>
-
-</dd></dl>
-
 <span class="target" id="module-BaseGraphicsWindow"></span><dl class="class">
 <dt id="BaseGraphicsWindow.GraphicsWindow">
 <em class="property">class </em><code class="descclassname">BaseGraphicsWindow.</code><code class="descname">GraphicsWindow</code><span class="sig-paren">(</span><em>title='Graphics Window'</em>, <em>width=200</em>, <em>height=200</em>, <em>autoflush=True</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicsWindow.GraphicsWindow" title="Permalink to this definition">¶</a></dt>
@@ -174,6 +127,53 @@ the click</p>
 
 </dd></dl>
 
+<span class="target" id="module-BaseGraphicObject"></span><dl class="class">
+<dt id="BaseGraphicObject.GraphicsObject">
+<em class="property">class </em><code class="descclassname">BaseGraphicObject.</code><code class="descname">GraphicsObject</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic base class for all of the drawable objects</p>
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.draw">
+<code class="descname">draw</code><span class="sig-paren">(</span><em>graphwin</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the object in graphwin, which should be a GraphWin
+object.  A GraphicsObject may only be drawn into one
+window. Raises an error if attempt made to draw an object that
+is already visible.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.move">
+<code class="descname">move</code><span class="sig-paren">(</span><em>dx</em>, <em>dy</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>move object dx units in x direction and dy units in y
+direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.setFill">
+<code class="descname">setFill</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setFill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set interior color to color</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.setOutline">
+<code class="descname">setOutline</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setOutline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set outline color to color</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.setWidth">
+<code class="descname">setWidth</code><span class="sig-paren">(</span><em>width</em><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set line weight to width</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BaseGraphicObject.GraphicsObject.undraw">
+<code class="descname">undraw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BaseGraphicObject.GraphicsObject.undraw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Undraw the object (i.e. hide it). Returns silently if the
+object is not currently drawn.</p>
+</dd></dl>
+
+</dd></dl>
+
 <span class="target" id="module-BaseLine"></span><span class="target" id="module-BaseOval"></span><span class="target" id="module-BasePoint"></span><span class="target" id="module-BaseRectangle"></span><span class="target" id="module-BaseText"></span><span class="target" id="module-BaseUpdate"></span></div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
@@ -192,7 +192,7 @@ the click</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to GRCGL&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#">Green River College Python Graphic documentation !</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 <div class="relations">

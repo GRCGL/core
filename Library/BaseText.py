@@ -8,8 +8,8 @@ class Text(GraphicsObject):
         GraphicsObject.__init__(self, ["justify", "fill", "text", "font"])
         self.setText(text)
         self.anchor = p.clone()
-        self.setFill(DEFAULT_CONFIG['outline'])
-        self.setOutline = self.setFill
+        self.setFillColor(DEFAULT_CONFIG['outline'])
+        self.setOutline = self.setFillColor
 
     def __repr__(self):
         return "Text({}, '{}')".format(self.anchor, self.getText())
@@ -58,5 +58,5 @@ class Text(GraphicsObject):
             raise GraphicsError(BAD_OPTION)
 
     def setTextColor(self, color):
-        self.setFill(color)
+        self.setFillColor(color)
 

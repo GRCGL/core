@@ -26,8 +26,8 @@ def wallBounce():
     size = 10
     margin = 2
     Ball = GRC.Circle(GRC.Point(p1, p2), size)
-    Ball.setFill(Color)
-    Ball.setOutline(Color)
+    Ball.setFillColor(Color)
+    Ball.setBoarderColor(Color)
     gWindow.addItem(Ball)
     gWindow.redraw()
     gWindow.update()
@@ -53,8 +53,8 @@ def doBounce(gWindow, Ball, windowHeight, margin, windowWidth, size, Color):
         # if (xx == (windowHeight - size - 2) or yy == (width - size - 2) or ((xx <= 2) or (yy <= 2))):
         if any([xx >= (windowHeight - size - margin), yy >= (windowWidth - size - margin), xx <= margin, yy <= margin]):
             Color = getNewColor(Color)
-            Ball.setFill(Color)
-            Ball.setOutline(Color)
+            Ball.setFillColor(Color)
+            Ball.setBoarderColor(Color)
             calcBounceAngle()
 
         key = gWindow.checkForKeyPress()

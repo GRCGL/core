@@ -49,7 +49,7 @@ def main():
         MinuteHand.draw(gWindow)
 
         message = GRC.Text(GRC.Point(150, 290), str(hour).zfill(2) + ":" + str(minute).zfill(2) + ":" + str(sec).zfill(2))
-        message.setFill("Green")
+        message.setFillColor("Green")
         message.draw(gWindow)
         GRC.time.sleep(interval)
 
@@ -65,7 +65,7 @@ def main():
 def clockHand (endPoint, handWidth, handColor, clockCenter):
     hourHand = GRC.Line(endPoint, clockCenter)
     hourHand.setWidth(handWidth)
-    hourHand.setFill(handColor)
+    hourHand.setFillColor(handColor)
     hourHand.setArrow("first")
     return hourHand
 

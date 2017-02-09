@@ -14,7 +14,7 @@ from Library.BaseGlobals import *
 
 
 class GraphicsWindow(tk.Canvas):
-    """A GraphicsWindow is windows for drawing graphics objects"""
+    """A GraphicsWindow is windows for drawing graphics objects !!1"""
 
     def __init__(self, title="Graphics Window",
                  width=200,
@@ -75,7 +75,7 @@ class GraphicsWindow(tk.Canvas):
         self.redraw()
 
     def close(self):
-        """Close the window"""
+        """Close the window test"""
 
         if self.closed: return
         self.closed = True

@@ -28,11 +28,11 @@ class GraphicsObject:
             config[option] = DEFAULT_CONFIG[option]
         self.config = config
 
-    def setFill(self, color):
+    def setFillColor(self, color):
         """Set interior color to color"""
         self._reconfig("fill", color)
 
-    def setOutline(self, color):
+    def setBoarderColor(self, color):
         """Set outline color to color"""
         self._reconfig("outline", color)
 

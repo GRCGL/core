@@ -1,16 +1,12 @@
-GreenRiver College Python Graphics Library, 2017
-
-See Docs directory for python APIs
-
-Install:
-  Download project from GitHub
-  Place"Library" folder into your Python project folder. 
-  
-Sample code that draws a box.
-
 from Library import GRCGraphics as GRC
 
 def main():
+
+     drawBox()
+
+
+def drawBox():
+
     # define size of graphics window
     windowWidth = 300
     windowHeight = 300
@@ -33,8 +29,10 @@ def main():
     polygon.draw(gWindow)
 
     # click on window to close\exit
-    gWindow.waitForClick()
-
+    # gWindow.waitForClick()
 
 # call main function
+
 main()
+
+

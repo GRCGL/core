@@ -6,8 +6,8 @@ from Library.BaseBBox import *
 class Line(BBox):
     def __init__(self, p1, p2):
         BBox.__init__(self, p1, p2, ["arrow", "fill", "width"])
-        self.setFill(DEFAULT_CONFIG['outline'])
-        self.setOutline = self.setFill
+        self.setFillColor(DEFAULT_CONFIG['outline'])
+        self.setOutline = self.setFillColor
 
     def __repr__(self):
         return "Line({}, {})".format(str(self.p1), str(self.p2))

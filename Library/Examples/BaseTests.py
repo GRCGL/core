@@ -16,10 +16,10 @@ def main():
     c3 = GRC.Circle(GRC.Point(p1, p2), size)
     c4 = GRC.Circle(GRC.Point(p1, p2), size)
 
-    c1.setFill("BLACK")
-    c2.setFill("RED")
-    c3.setFill("GREEN")
-    c4.setFill("White")
+    c1.setFillColor("BLACK")
+    c2.setFillColor("RED")
+    c3.setFillColor("GREEN")
+    c4.setFillColor("White")
 
     win.addItem(c1)
     win.addItem(c2)
@@ -31,7 +31,7 @@ def main():
     # win.redraw()
     # win.getMouse()
 
-    c4.setFill("blue")
+    c4.setFillColor("blue")
     for i in range(1,22):
         c1.move(-i,-i)
         c2.move(-i,i)
