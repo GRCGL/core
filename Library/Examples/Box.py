@@ -1,5 +1,5 @@
 import random, os, sys, inspect
-sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
+#sys.path.append (os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
 from Library import GRCGraphics as GRC
 
 def main():

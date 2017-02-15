@@ -10,7 +10,7 @@ class GraphicsObject:
     """Generic base class for all of the drawable objects"""
 
     # A subclass of GraphicsObject should override _draw and
-    #   and _move methods.
+    # and _move methods.
 
     def __init__(self, options):
         # options is a list of strings indicating which options are

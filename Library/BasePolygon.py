@@ -1,5 +1,5 @@
 from Library.BaseGraphicObject import *
-from Library.BaseGraphicsWindow import *
+from Library.GraphicsWindow import *
 from Library.BasePoint import *
 
 

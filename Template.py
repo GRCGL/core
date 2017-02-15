@@ -1,5 +1,13 @@
 from Library import GRCGraphics as GRC
 
+# define size of graphics window
+windowWidth = 300
+windowHeight = 300
+
+# Define the graphics window object
+gWindow = GRC.GraphicsWindow("Title of window: Box", windowWidth, windowHeight)
+
+
 def main():
 
      drawBox()
@@ -7,12 +15,6 @@ def main():
 
 def drawBox():
 
-    # define size of graphics window
-    windowWidth = 300
-    windowHeight = 300
-
-    # Define the graphics window object
-    gWindow = GRC.GraphicsWindow("Title of window: Box", windowWidth, windowHeight)
 
     # set boarder Color of box object
     boarderColor = "Black"

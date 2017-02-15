@@ -60,3 +60,27 @@ class Text(GraphicsObject):
     def setTextColor(self, color):
         self.setFillColor(color)
 
+def demo():
+
+    import random, os, sys, inspect, pickle
+    from Library import GRCGraphics as GRC
+
+    windowWidth = 300
+    windowHeight = 25
+    interval = 1
+    Color = random.choice(GRC.COLORS)
+    gWindow = GRC.GraphicsWindow("Text Demo", windowWidth, windowHeight)
+
+    scrollText = GRC.Text(GRC.Point(500, 15), "Scroll Demo.... ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    scrollText.setTextColor("Blue")
+    scrollText.setFontSize(12)
+    gWindow.addItem(scrollText)
+    gWindow.update()
+
+    for moveX in range(1,700,1):
+        scrollText.move(-1,0)
+        gWindow.redraw()
+        GRC.time.sleep(.01)
+
+    Util.pause(gWindow)
+

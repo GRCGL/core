@@ -4,7 +4,7 @@ from Library.BaseEntry import *
 from Library.BaseGlobals import *
 from Library.BaseGraphicObject import *
 from Library.BaseGraphicsError import *
-from Library.BaseGraphicsWindow import *
+from Library.GraphicsWindow import *
 from Library.BaseImage import *
 from Library.BaseLine import *
 from Library.BaseOval import *

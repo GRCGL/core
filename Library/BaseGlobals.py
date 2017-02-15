@@ -8,6 +8,8 @@ except:
 OBJ_ALREADY_DRAWN = "Object currently drawn"
 UNSUPPORTED_METHOD = "Object doesn't support operation"
 BAD_OPTION = "Illegal option value"
+VERSION = 1.0
+COLORS =['Red', 'Green', 'Blue', 'White', 'Black', 'Yellow', 'Orange', 'Pink', 'Purple', 'Gold', 'Gray', 'Maroon']
 
 
 DEFAULT_CONFIG = {"fill": "",
